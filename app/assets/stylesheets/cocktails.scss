@@ -1,0 +1,77 @@
+// Place all the styles related to the Cocktails controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.cocktail-image {
+  height: 200px;
+  background-image: cover;
+  background-position: center;
+}
+
+.actions {
+  display:flex;
+  padding: 10px;
+  justify-content: center;
+}
+
+.first-action {
+  padding: 5px;
+}
+
+
+
+.search-flex {
+  display: flex;
+  align-item: center;
+}
+
+.title {
+  text-align: center;
+}
+
+.add-cocktail {
+  text-align: center;
+  margin: auto;
+}
+
+.card-trip {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin-top: 10px;
+}
+
+.card-trip > img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-trip h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-trip p {
+  font-size: 12px;
+  opacity: .7;
+  margin: 0;
+}
+
+
+.card-trip .card-trip-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  position: relative;
+}
+
+.card-trip-infos .card-trip-user {
+  position: absolute;
+  right: 16px;
+  top: -20px;
+  width: 40px;
+}

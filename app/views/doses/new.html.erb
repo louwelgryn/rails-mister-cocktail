@@ -1,0 +1,13 @@
+
+<br>
+
+ <h1>Add a new dose to <%=@cocktail.name  %> cocktail🍸</h1>
+
+<%= simple_form_for [@cocktail, @dose] do |f| %>
+<%= f.association :ingredient %>
+<%= f.input :description %>
+<%= f.submit class: 'btn btn-primary' %>
+<% end %>
+
+
+<%= link_to "Go back to cocktail's list", cocktails_path, class: 'btn btn-warning' %>

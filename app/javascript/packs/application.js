@@ -16,3 +16,27 @@
 // const imagePath = (name) => images(name, true)
 
 console.log('Hello World from Webpacker')
+import 'bootstrap';
+
+import Typed from 'typed.js';
+
+const options = {
+  strings: ["your night", "your day"],
+  loop: true,
+  typeSpeed: 40
+}
+
+const typed = new Typed(".typed", options);
+
+typed();
+
+// import 'select2/dist/css/select2.css';
+
+// import { initSelect2 } from '../components/init_select2';
+
+// initSelect2();
+
+// search = document.querySelector('.js-example-basic-single')
+// search.addEventListener('click',(event) => {
+// @restaurants.name = event.currentTarget.value
+//  })

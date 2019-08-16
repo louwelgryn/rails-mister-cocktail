@@ -1,0 +1,27 @@
+
+<br>
+<br>
+<h1 class= "title">The best way to spend <span class="typed"></span> </h1>
+
+<%= link_to 'Add a new Coktail', new_cocktail_path, class: 'btn btn-danger add-cocktail' %>
+
+
+
+
+
+
+<div class="row">
+<% @cocktails.each do |cocktail| %>
+  <div class="col-4">
+    <div class="card-trip">
+      <div class="cocktail-image" style="background-image: url(<%=cocktail.image%>)"></div>
+      <div class="card-trip-infos">
+        <div>
+          <%= link_to cocktail.name, cocktail_path(cocktail),style: "color: red;"%>
+        </div>
+        <h2 class="card-trip-pricing">Delicious</h2>
+      </div>
+    </div>
+  </div>
+  <% end %>
+</div>
