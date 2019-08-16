@@ -8,7 +8,7 @@
 <div class="first-action"><%= link_to 'Go back to cocktail', cocktails_path, class: 'btn btn-primary' %></div>
 </div>
 
-<div class="banner mt-10" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= cl_image_path @cocktail.image, height: 200, width: 200, crop: :fill %>')">
+<div class="banner mt-10" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('<%= cl_image_path @cocktail.image, :crop=>"mfit", :effect=>"contrast:0"; %>')">
   <div class="container">
     <div class="banner-recipe">
       <h2>Recipe </h2>
