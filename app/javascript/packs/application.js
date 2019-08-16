@@ -28,7 +28,6 @@ const options = {
 
 const typed = new Typed(".typed", options);
 
-typed();
 
 // import 'select2/dist/css/select2.css';
 
