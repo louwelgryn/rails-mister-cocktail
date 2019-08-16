@@ -8,11 +8,12 @@
 
 
 
+
 <div class="row">
 <% @cocktails.each do |cocktail| %>
   <div class="col-4">
     <div class="card-trip">
-      <div class="cocktail-image" style="background-image: url(<%=cocktail.image%>)"></div>
+      <div class="cocktail-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)),url('<%= cl_image_path cocktail.image %>')"></div>
       <div class="card-trip-infos">
         <div>
           <%= link_to cocktail.name, cocktail_path(cocktail),style: "color: red;"%>
